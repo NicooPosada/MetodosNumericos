@@ -1,0 +1,3 @@
+git add . (capturo todo)
+git commit -m "commit" (hago un commit)
+git push -u origin main (subir cambiios)
