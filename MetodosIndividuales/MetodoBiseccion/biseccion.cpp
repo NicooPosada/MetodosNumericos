@@ -15,22 +15,29 @@ int main(int argc, char const *argv[])
     printf("Ingrese el final del intervalo: ");
     scanf("%lf", &b);
 
-    if (f(a) * f(b) < 0) {
+    if (f(a) * f(b) < 0)
+    {
         printf("El intervalo es válido \n");
-    } else {
+    }
+    else
+    {
         printf("El intervalo no es válido \n");
         exit(0);
     }
-    do {
+    do
+    {
         c = (a + b) / 2.0;
         error = fabs(f(c)); // Error actual (valor absoluto de f(c))
 
         printf("Iteración %d: a = %.10lf, b = %.10lf, c = %.10lf, f(c) = %.10lf, error = %.10lf\n",
                i, a, b, c, f(c), error);
 
-        if (f(a) * f(c) < 0) {
+        if (f(a) * f(c) < 0)
+        {
             b = c;
-        } else {
+        }
+        else
+        {
             a = c;
         }
         i++;
